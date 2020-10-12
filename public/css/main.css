@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    color: white;
+}
+
+:root {
+    /* baseando a porcentagem em 16px, que é padrao do navegador */
+    font-size: 62.5%;
+}
+
+body, 
+input, 
+button, 
+textarea {
+    /* font-size: 18px;
+    line-height: 1;*/
+    font: 400 1.8rem/1 'Nunito', sans-serif;
+}
