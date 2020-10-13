@@ -1,5 +1,5 @@
 /* animacoes */
-/* para aparecer o conteudo de cima pra baixo */
+/* para aparecer o conteudo de cima pra baixo - eixo vertical (page index)*/
 @keyframes up {
     from {
         opacity: 0;
@@ -17,4 +17,36 @@
     animation-name: up;
     animation-duration: 300ms;
     animation-fill-mode: backwards;
+}
+
+/* animacao da barra da direita para esquerda - eixo horizontal (page-orphanages) */
+@keyframes right {
+    from{
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.animate-right {
+    animation-name: right;
+    animation-duration: 300ms;
+}
+
+/* animacao aparição mapa */
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animate-appear {
+    animation-name: appear;
+    animation-duration: 300ms;
+    animation-fill-mode: backwards;
+
 }
