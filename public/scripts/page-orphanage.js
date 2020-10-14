@@ -9,7 +9,7 @@ const options = {
 
 // inserindo o mapa
 // lagitude, longitude e zoom
-const map = L.map('mapid').setView([-11.3030237,-41.858604], 15)
+const map = L.map('mapid', options).setView([-11.3030237,-41.858604], 15)
 
 // create and add tileLayer
 L.tileLayer(
@@ -30,6 +30,36 @@ const icon = L.icon({
 L.
 marker([-11.3030237,-41.858604], {icon})
 .addTo(map)
+
+
+// create image gallery
+function selectImage (event) {
+    // currentTarget = atual alvo
+    const button = (event.currentTarget)
+
+    // remover todas as classes activas
+    // querySelectorAll = busca por todos os seletores/botao
+    const buttons = document.querySelectorAll(".images button")
+    // (() => {}) function. Para todos os botoes executa tal funcao
+    buttons.forEach(removeActiveClass)
+
+    function removeActiveClass(button) {
+        button.classList.remove("active")
+    }
+
+    // selecionar a imagem clicada
+    const image = button.children[0]
+    // pegado o primeiro nivel da imagem
+    const imageContainer = document.querySelector(".orphanage-details > img")
+
+
+    //atualizar o container de imagem 
+    imageContainer.src = image.src
+
+
+    //adicionar a classe active para o botao que foi clicado
+    button.classList.add('active')
+}
 
 
 
