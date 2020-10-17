@@ -17,7 +17,7 @@ L.tileLayer(
 
 //create icon
 const icon = L.icon({
-    iconUrl: "./public/images/map-marker.svg",
+    iconUrl: "/images/map-marker.svg",
     // largura e altura do icon
     iconSize: [58, 68],
     // onde ficara o  popup
