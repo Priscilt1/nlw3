@@ -9,7 +9,10 @@ const pages = require('./pages.js');
 const server = express ()
 // criando todas as rotas referentes ao public (arquivos estaticos)
 server
-.use(express.static('public'))
+    //ultizando body do req
+    .use(express.urlencoded({ extended: true }))
+    //ultilizando arquivos estaticos
+    .use(express.static('public'))
 
     //configurar template engine
     .set('views', path.join(__dirname, "views"))
@@ -20,6 +23,7 @@ server
     .get('/orphanage', pages.orphanage)
     .get('/orphanages', pages.orphanages)
     .get('/create-orphanage', pages.createOrphanage)
+    .post('/save-orphanage', pages.saveOrphanage)
 
 
 // ligar o servidor 
