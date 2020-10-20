@@ -7,9 +7,13 @@ const options = {
     zoomControl: false
 }
 
+//get values ffrom html 
+const lat = document.querySelector('span[data-lat]').dataset.lat
+const lng = document.querySelector('span[data-lng]').dataset.lng
+
 // inserindo o mapa
 // lagitude, longitude e zoom
-const map = L.map('mapid', options).setView([-11.3030237,-41.858604], 15)
+const map = L.map('mapid', options).setView([lat,lng], 15)
 
 // create and add tileLayer
 L.tileLayer(
@@ -28,7 +32,7 @@ const icon = L.icon({
 
 //crate and add marker
 L.
-marker([-11.3030237,-41.858604], {icon})
+marker([lat,lng], {icon})
 .addTo(map)
 
 
