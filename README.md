@@ -4,7 +4,7 @@ O projeto do NLW 3 (Next Level Week) foi nomeado como Happy e trata-se de uma ap
 Foi usado HTML (posteriormente HBS), CSS, JAVASCRIPT, NODE.JS e SQL.
 
 
-# Página - incial 🚀
+# Página - inicial 🚀
 <img src="https://media-exp1.licdn.com/dms/image/C4E22AQHyvJzU0nwtDw/feedshare-shrink_1280-alternative/0?e=1606348800&v=beta&t=1FmVTaT3stV8T5RO2FeQX_-HvIY6krb0_R-CkplUlPA" style="width: 50%">
 
 # Página - Escolha um orfanato🚀
