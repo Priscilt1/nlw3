@@ -1,6 +1,6 @@
 # nlw3 🚀🚀
 
-O projeto do NLW 3 (Next Level Week) foi nomeada como Happy e trata-se de uma aplicação para visitas em orfanantos.
+O projeto do NLW 3 (Next Level Week) foi nomeado como Happy e trata-se de uma aplicação para visitas em orfanantos.
 Foi usado HTML (posteriormente HBS), CSS, JAVASCRIPT, NODE.JS e SQL.
 
 
